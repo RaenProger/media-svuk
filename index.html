@@ -1,41 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
     <link rel="stylesheet" href="css/bootstrap-grid.min.css"/>
-    <link rel="stylesheet" href="css/fontawesome.min.css"/>
     <link rel="stylesheet" href="css/style.css">
-    <title>МЕДИА-ЗВУК</title>
 </head>
 <body>
     <!--HEADER-->
  <div class="container-fluid container-fluid__header">
+   
     <div class="container container__fixed">
         <nav class="navbar">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand navbar-brand__header" href="index.html">
               <img src="img/logo.png" alt="#">
             </a>
             <ul>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav__link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                  Аудиоуслуги
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">реклама</a>
-                  
+                  <a class="dropdown-item" href="audio_advertising.html">реклама</a>
+                  <a class="dropdown-item" href="videocontent.html">видео</a>
+                  <a class="dropdown-item" href="books.html">книги</a>
+                  <a class="dropdown-item" href="autoresponders.html">автоответчики</a>
                 </div>
               </li>
               <li>
-                <a class="nav__link" href="#">Дикторы</a>
+                <a class="nav__link" href="speakers.html">Дикторы</a>
               </li>
               <li>
-                <a class="nav__link" href="#">Контакты</a>
+                <a class="nav__link" href="contacts.html">Контакты</a>
               </li>
+
       
               </ul>
         </nav>
+         
+
+       
+        <span class="nav__link__timer"data-toggle="modal" data-target="#exampleModal0" href="">
+          <img src="img/timer.png"
+          alt="Хрономер"><p>Хрономер</p></span>
+       
+          <div class="modal fade" id="exampleModal0" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="close__button">
+                  <span class="close-image-icon">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><img src="img/close.png"></span>
+                  </button>
+                  </span>
+                </div>
+            
+                <div class="container-fluid container-fluid__chronometer">
+                  <div class="container container__fixed">
+                   
+                    <h1 class="chronometer">Хрономер для текста</h1>
+                  
+                    <form action="#" id="form">
+                      <textarea rows="10" class="form-control" cols="100" name="text" id="text" placeholder="Вставьте ваш текст" style="resize: none"></textarea>
+                      
+                      <div class="row">
+                         
+                
+                      
+                    <div class="col-md-3">
+                    
+                    
+                      <p>Темп речи</p>
+                      <div class="tempo">
+                      
+                       <div class="radio">
+                          <label class="red"><input class="radio" type="radio" value="1" name="temp" >&nbsp;<span>Средний</span></label>
+                        </div>
+              
+                      <div class="radio">
+                        <label class="yellow"><input class="radio" type="radio" value="2" name="temp" checked="checked">&nbsp;<span>Медленный</span></label>
+                      </div>
+                      
+                
+                      <div class="radio">
+                        <label class="blue"><input class="radio" type="radio" value="3" name="temp">&nbsp;<span>Быстрый</span></label>
+                      </div>
+                    </div>
+                    </div>
+                      
+                
+                      <div class="col-md-8">
+                        <div class="counter">
+                      <div><p>Хронометраж ≈ <span id="time">0 секунд</span></p></div>
+                      <p>Знаков: <span id="cnt">0</span> / Слов: <span id="wrd">0</span></p>
+                    </div>
+                    </div>
+              
+                </div>
+                
+                  
+                  </form>
+                  
+                  </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      
+        
+       
+         
+            
+          
           <h1>Создание аудиоконтента по доступным ценам</h1>
     </div>
 </div>
@@ -46,34 +124,43 @@
         
 <div class="container-fluid container-fluid__advertising">
   <div class="container container__fixed">
-   <h2>Аудиореклама</h2>
-   <h3>Примеры работ и цены.</h3>
+   <h2 id="audiocontent">Аудиореклама</h2>
+   <h5>Хотите заказать аудиорекламму?<p>Мы сделаем продукт быстро, недорого и качественно.</p></h5>
+
+   <div class="more">
+   <a href="audio_advertising.html">подробнее ></a>
+  </div>
+  
     <div class="row">
     
       <div class="col-md-3">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Ночной клуб "THE ONE"</h5>
-          <p class="card-text">Комерческое обьявление</p>
-          <p class="card-text2">Количество голосов: один</p>
+          <h5 class="card-title">Комерческое обьявление</h5>
+          <p class="card-text card-text__advert_1">Вакансия</p>
+          <p class="card-text1">Эффекты на голосе: нет</p>
+          <p class="card-text2">Сроки: 1 день</p>
           <audio controls >
-            <source src="audio/Igoods1.mp3" type="audio/mpeg">
+            <source src="audio/vacancy.mp3" type="audio/mpeg">
           </audio> 
-          <p class="price">1000 р</p>
+          <p class="price">от 500 р</p>
         </div>
       </div>
+      
+      
     </div>
       
     <div class="col-md-3">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Ночной клуб "THE ONE"</h5>
-          <p class="card-text">Аудиореклама</p>
-          <p class="card-text2">Количество голосов: один</p>
+          <h5 class="card-title card-title__advert_2">Имиджевая реклама</h5>
+          <p class="card-text">"Energy Night"</p>
+          <p class="card-text1">Эффекты на голосе: есть</p>
+          <p class="card-text2">Сроки: 1-2 дня</p>
           <audio controls>
-            <source src="audio/Igoods1.mp3" type="audio/mpeg">
+            <source src="audio/energy-club.mp3" type="audio/mpeg">
           </audio> 
-          <p class="price">1500 р</p>
+          <p class="price">от 1000 р</p>
         </div>
       </div>
     </div>
@@ -81,13 +168,14 @@
     <div class="col-md-3">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Ночной клуб "THE ONE"</h5>
-          <p class="card-text">Аудиореклама</p>
-          <p class="card-text2">Количество голосов: два</p>
+          <h5 class="card-title">Игровой ролик</h5>
+          <p class="card-text">Доставка "Igooods"</p>
+          <p class="card-text1">Эффекты на голосе: есть</p>
+          <p class="card-text2">Сроки: 1-2 дня</p>
           <audio controls>
-            <source src="audio/Igoods1.mp3" type="audio/mpeg">
+            <source src="audio/igoods.mp3" type="audio/mpeg">
           </audio> 
-          <p class="price">2000 р</p>
+          <p class="price">от 1500 р</p>
         </div>
       </div>
     </div>
@@ -96,13 +184,14 @@
     <div class="col-md-3">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Ночной клуб "THE ONE"</h5>
-          <p class="card-text">Вокальная аудиореклама</p>
-          <p class="card-text2">Количество голосов:один-два</p>
+          <h5 class="card-title">Вокальная реклама</h5>
+          <p class="card-text">Евростиль</p>
+          <p class="card-text1">Эффекты на голосе: есть</p>
+          <p class="card-text2">Сроки: 1-3 дня</p>
           <audio controls>
-            <source src="audio/Igoods1.mp3" type="audio/mpeg">
+            <source src="audio/eurostyle.mp3" type="audio/mpeg">
           </audio> 
-          <p class="price">2500 р</p>
+          <p class="price">от 2000 р</p>
         </div>
       </div>
     </div>
@@ -117,9 +206,265 @@
 
 
 
+
+
+
+
+
+
+
+   <!--  VIDEO -->
+
+            <div class="container_fluid container_fluid__video">
+              <div class="container container__fixed ">
+                <h2>Видеоконтент</h2>
+                <h3>Озвучивание видеороликов, презентаций, инфографики.</h3>
+
+                <div class="more">
+                  <a href="videocontent.html">подробнее ></a>
+                 </div>
+
+                  <div class="video__container">
+                  <video class="video__media"  controls src="video/sportbaby.mp4">
+                    <source src="video/sportbaby.mp4" type="video/mp4">
+                  </video>
+                </div>
+                 
+                 
+              </div>
+              </div>
+
+
+
+
+<!-- BOOKS  -->     
+
+              <div class="container_fluid container_fluid__books">
+                <div class="container container__fixed">
+                  <h2 id="bookscontent">Аудиокниги</h2>
+                  <h3>Озвучивание и запись аудиокниг по выгодным ценам. </h3>
+
+                  <div class="more">
+                    <a href="books.html">подробнее ></a>
+                   </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">История России</h5>
+                          <p class="card-text"></p>
+                          <p class="card-text1">Музыка/шумы: нет</p>
+                          <p class="card-text2">Сроки: 1 день</p>
+                          <audio controls>
+                            <source src="audio/history.mp3" type="audio/mpeg">
+                          </audio> 
+                          <p class="price">от 1500 р/час</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Русская доблесть</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text1">Музыка/шумы: есть</p>
+                        <p class="card-text2">Сроки: 1-3 дня</p>
+                        <audio controls >
+                          <source src="audio/russian_valor.mp3" type="audio/mpeg">
+                        </audio> 
+                        <p class="price">от 4000 р/час</p>
+                      </div>
+                    </div>
+                  </div>
+                    
+                  
+
+                </div>
+
+                </div>
+                </div>
+
+
+
+
+
+
+ <!-- AUTORESPONDERS  -->     
+
+              <div class="container_fluid container_fluid__autoresponders">
+                <div class="container container__fixed">
+                  <h2 id="bookscontent">Автоответчики и IVR меню</h2>
+                  <h3>Запись телефонных автоответчиков, озвучка IVR меню и автоинформаторов.</h3>
+                  
+                  <div class="more">
+                    <a href="autoresponders.html">подробнее ></a>
+                   </div>
+
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Автоинформеры</h5>
+                          <p class="card-text1">Музыка: нет</p>
+                          <p class="card-text2">Сроки: 1 день</p>
+                          <audio controls >
+                            <source src="audio/autoinfo.mp3" type="audio/mpeg">
+                          </audio> 
+                          <p class="price">от 300 р</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                   
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Автоответчик</h5>
+                          <p class="card-text1">Музыка: есть</p>
+                          <p class="card-text2">Сроки: 1 день</p>
+                          <audio controls>
+                            <source src="audio/winter.mp3" type="audio/mpeg">
+                          </audio> 
+                          <p class="price">от 600 р</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">IVR меню</h5>
+                          <p class="card-text1">Музыка: есть</p>
+                          <p class="card-text2">Сроки: 1 день</p>                     
+                          <audio controls>
+                            <source src="audio/global_group.mp3" type="audio/mpeg">
+                          </audio> 
+                          <p class="price">от 600 р</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                </div>
+
+
+                
+
+                </div>
+                </div>
+
+
+<!--  PROCESS -->
+                <div class="container-fluid container-fluid__process">
+                  <div class="container container__fixed">
+                    
+                    <h2>Как сделать заказ</h2>
+                   
+                    <div class="row">
+                      <div class="col-md-3">
+                        <p>Выберите продукт </p>
+                        <img src="img/process1.png"  alt="">
+                      </div>
+                      <div class="col-md-3">
+                        <p>Заполните окно заказа</p>
+                        <img src="img/process2.png" alt="">
+                      </div>
+                      <div class="col-md-3">
+                        <p>Обсуждение деталей</p>
+                        <img src="img/process3.png" alt="">
+                      </div>
+                      <div class="col-md-3">
+                        <p>Согласование задания</p>
+                        <img src="img/process4.png" alt="">
+                      </div>
+                    </div>
+
+                  </div>
+                  </div>
+
+<!--CALLING-->
+            <div class="container-fluid container-fluid__calling">
+              <div class="container container__fixed">
+                <h2>Нет времени заполнять?</h2>
+                  <h3>Звоните! <a class="mainphone" href="tel:89261748569">+79261748569 <p>(telegram, whatsapp)</p></a></h3>
+                </div>
+                </div>
+
+
+ <!--  PHOTOS -->
+                <div class="container-fluid container-fluid__photos">
+                  <div class="container container__fixed">
+                    
+                    <h2>Фото из студии</h2>
+                   
+                    <div class="row">
+                      <div class="col-md-8">
+                        <img src="img/photo6.jpg" alt="">
+                      </div>
+                      <div class="col-md-4">
+                        <img src="img/photo2.jpg" alt="">
+                        <img src="img/photo3.jpg" alt="">
+                      </div>
+                    </div>
+
+                  </div>
+                  </div>
+
+
+
+
+ <!--  FOOTER -->
+            <div class="container_fluid container_fluid__footer">
+              <div class="container container__fixed">
+                <h2 id="contacs">Контакты</h2>
+
+                <nav class="navbar">
+                  <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="#">
+                  </a>
+                  <ul>
+                    <li class="nav-item ">
+                      <a class="nav-link nav-link_nav nav-link_nav_end phone" href="tel:89261748569"><img src="img/phone2.png" alt=""><span>8-926-174-85-69</span></a>
+                    
+                    </li>
+                    <li>
+                      <a class="nav-link nav-link_nav nav-link_nav_last" href="mailto:raen_86@mail.ru"><img class="pr-1" src="img/email-(2).png" alt=""><span>raen_86@mail.ru</span></a>
+                    </li>
+        
+            
+                    </ul>
+              </nav>
+            </div>
+          </div>
+
+
+          <a id="button"></a>
+
+
+
+
+
+
+
+          
+
+              
+              
+              
+           
+          
+           
+           
     
 
-<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
  <script src="js/script.js"></script>   

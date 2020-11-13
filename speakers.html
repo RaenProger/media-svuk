@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+</head>
+<body>
+    <!--HEADER-->
+ <div class="container-fluid container-fluid__header">
+   
+    <div class="container container__fixed">
+        <nav class="navbar">
+            <a class="navbar-brand navbar-brand__header" href="index.html">
+              <img src="img/logo.png" alt="#">
+            </a>
+            <ul>
+              <li class="nav-item dropdown">
+                <a class="nav__link" href="index.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Аудиоуслуги
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="audio_advertising.html">реклама</a>
+                  <a class="dropdown-item" href="videocontent.html">видео</a>
+                  <a class="dropdown-item" href="books.html">книги</a>
+                  <a class="dropdown-item" href="autoresponders.html">автоответчики</a>
+                </div>
+              </li>
+              <li>
+                <a class="nav__link" href="speakers.html">Дикторы</a>
+              </li>
+              <li>
+                <a class="nav__link" href="contacts.html">Контакты</a>
+              </li>
+
+      
+              </ul>
+        </nav>
+        
+        <span class="nav__link__timer"data-toggle="modal" data-target="#exampleModal0" href="">
+          <img src="img/timer.png"
+          alt="Хрономер"><p>Хрономер</p></span>
+       
+          <div class="modal fade" id="exampleModal0" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="close__button">
+                  <span class="close-image-icon">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><img src="img/close.png"></span>
+                  </button>
+                  </span>
+                </div>
+            
+                <div class="container-fluid container-fluid__chronometer">
+                  <div class="container container__fixed">
+                   
+                    <h1 class="chronometer">Хрономер для текста</h1>
+                  
+                    <form action="#" id="form">
+                      <textarea rows="10" class="form-control" cols="100" name="text" id="text" placeholder="Вставьте ваш текст" style="resize: none"></textarea>
+                      
+                      <div class="row">
+                         
+                
+                      
+                    <div class="col-md-3">
+                    
+                    
+                      <p>Темп речи</p>
+                      <div class="tempo">
+                      
+                       <div class="radio">
+                          <label class="red"><input class="radio" type="radio" value="1" name="temp" >&nbsp;<span>Средний</span></label>
+                        </div>
+              
+                      <div class="radio">
+                        <label class="yellow"><input class="radio" type="radio" value="2" name="temp" checked="checked">&nbsp;<span>Медленный</span></label>
+                      </div>
+                      
+                
+                      <div class="radio">
+                        <label class="blue"><input class="radio" type="radio" value="3" name="temp">&nbsp;<span>Быстрый</span></label>
+                      </div>
+                    </div>
+                    </div>
+                      
+                
+                      <div class="col-md-8">
+                        <div class="counter">
+                      <div><p>Хронометраж ≈ <span id="time">0 секунд</span></p></div>
+                      <p>Знаков: <span id="cnt">0</span> / Слов: <span id="wrd">0</span></p>
+                    </div>
+                    </div>
+              
+                </div>
+                
+                  
+                  </form>
+                  
+                  </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+          <!-- <h1>Дикторы</h1> -->
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- SPEAKERS -->
+          <div class="container_fluid container_fluid__speakers">
+            <div class="container container__fixed">
+              <h2>Дикторы</h2>
+              <h3>Студия "Медиа-Звук" предоставляет дикторов для озвучивания аудиорекламмы, 
+                видеороликов, игр, приложений, аудиокниг, автоответчиков и других услуг. Наша база содержит абсолютно разные голоса и уникальные тембры.</h3> </h3>
+               <h5>Выберите нужный голос из нашей базы.</h5> 
+               <h6> Сроки изготовления составляют один-два дня после подтверждения заказа.
+                Цена указана за начитку одного текста до 30 секунд.</h6>
+
+               
+              <div class="filter">
+                <a href="#men" class="blue">мужской</a>
+                <a href="#women" class="red">женский</a>  
+                </div>
+
+              <h4 id="men" class="men">Мужские голоса</h4>
+                
+
+              <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                  <div class="modal-content">
+                    <div class="close__button">
+                      <span class="close-image-icon">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="img/close.png"></span>
+                      </button>
+                      </span>
+                    </div>
+        
+                    <div class="container-fluid container-fluid__order">
+                      <div class="container container__fixed">
+                       
+                        
+                      <h2>Выбрать диктора</h2>
+                          
+                        <form>
+              
+        
+                    <div class="form-group">
+                      <label for="exampleFormControlText3" class="">Диктор<span> (укажите имя и фамилию диктора из нашей базы)</span></label>
+                      <input type="text" class="form-control form-control-lg" id="exampleFormControlText3" placeholder="" required>
+                     </div>
+                          
+                    
+        
+                     <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Текст сценария <span>(если нет, вы можете заказать у нас)</span></label>
+                      <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" ></textarea>
+                    </div>
+
+
+                    <div class="form-group">
+                      <label for="exampleFormControlNumber1" class="">Хронометраж <span>(если не знаете, воспользуйтесь нашим хрономером)</span></label>
+                      <input type="text" class="form-control form-control-lg" id="exampleFormControlNumber1" placeholder="" required>
+                     </div>
+        
+                    <div class="form-group">
+                      <label for="exampleFormControlText4" class="">Примеры<span> (прикрепите пример начитки, если это необходимо)</span></label>
+                      <input type="text" class="form-control form-control-lg" id="exampleFormControlText4" placeholder="" >
+                      <input type="file" class="form-control-file" id="exampleFormControlFile2">
+                     </div>
+                      
+                    <div class="row">
+                      <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="" for="exampleFormControlNumber2">Ваш телефон</label>
+                      <input type="phone" class="form-control form-control-lg" id="exampleFormControlNumber2" placeholder="">
+                    </div>
+                  </div>
+        
+                  <div class="col-md-6">
+                    <div class="form-group">
+                     <label for="exampleFormControlEmail1" class="">Электронная почта</label>
+                      <input type="email" class="form-control form-control-lg" id="exampleFormControlEmail1" placeholder="" required>
+                    </div>
+                  </div>
+                  </div>
+        
+        
+                    <div class="form-group form-group__btn">
+                      <input type="submit" class="btn" value="Заказать" />
+                   </div>
+                  </form>
+                  
+                      
+                      
+                    </div>
+                      </div>
+        
+        
+                  </div>
+                </div>
+                </div>
+
+
+                <div class="slick_slider row row__cards">
+                  <div class=" col-md-4 col-md-4__mens">
+                    <div class="card card__men">
+                    <div class="row no-gutters">
+                  <div class="col-4">
+                    <img src="img/user.png"  class="card-img" alt="...">
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                       
+                      <h5 class="card-title">Диктор: Журавлев М.</h5>
+                      <p class="card-text">Голос: бас</p>
+                     
+                      <p class="card-text">Цена: <span>300 р </span></p>
+                      <audio controls>
+                        <source src="audio/Igoods1.mp3" type="audio/mpeg">
+                      </audio>
+                    </div>
+                  </div>
+                  
+                  </div>
+                </div>
+
+                <button class="order" data-toggle="modal" data-target="#exampleModal2">выбрать</button>
+
+                <div class="card card__men">
+                  <div class="row no-gutters">
+                <div class="col-4">
+                  <img src="img/user.png"  class="card-img" alt="...">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                     
+                    <h5 class="card-title">Диктор: Журавлев М.</h5>
+                    <p class="card-text">Голос: бас</p>
+                   
+                    <p class="card-text">Цена: <span>300 р </span></p>
+                    <audio controls>
+                      <source src="audio/Igoods1.mp3" type="audio/mpeg">
+                    </audio>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+
+              <button class="order" data-toggle="modal" data-target="#exampleModal2">выбрать</button>
+
+
+               
+              </div>
+              
+                <div class=" col-md-4 col-md-4__mens">
+                  <div class="card card__men">
+                  <div class="row no-gutters">
+                <div class="col-4">
+                  <img src="img/user.png"  class="card-img" alt="...">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Диктор: Шульгинов В.</h5>
+                      <p class="card-text">Голос: бас-баритон</p>
+                     
+                      <p class="card-text">Цена: <span>300 р </span></p>
+                      <audio controls>
+                        <source src="audio/Igoods1.mp3" type="audio/mpeg">
+                      </audio>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <button class="order" data-toggle="modal" data-target="#exampleModal2">выбрать</button>
+
+              <div class="card card__men">
+                <div class="row no-gutters">
+              <div class="col-4">
+                <img src="img/user.png"  class="card-img" alt="...">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                   
+                  <h5 class="card-title">Диктор: Журавлев М.</h5>
+                  <p class="card-text">Голос: бас</p>
+                 
+                  <p class="card-text">Цена: <span>300 р </span></p>
+                  <audio controls>
+                    <source src="audio/Igoods1.mp3" type="audio/mpeg">
+                  </audio>
+                </div>
+              </div>
+              
+              </div>
+            </div>
+
+            <button class="order" data-toggle="modal" data-target="#exampleModal2">выбрать</button>
+
+            </div>
+
+
+            <div class="col-md-4 col-md-4__mens">
+              <div class="card card__men">
+              <div class="row no-gutters">
+            <div class="col-4">
+              <img src="img/user.png" class="card-img" alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">Диктор: Андрей</h5>
+                  <p class="card-text">Голос: баритон</p>
+                 
+                  <p class="card-text">Цена: <span>300 р </span></p>
+                  <audio controls>
+                    <source src="audio/Igoods1.mp3" type="audio/mpeg">
+                  </audio>
+              </div>
+            </div>
+            </div>
+          </div>
+          <button class="order" data-toggle="modal" data-target="#exampleModal2">выбрать</button>
+
+          <div class="card card__men">
+            <div class="row no-gutters">
+          <div class="col-4">
+            <img src="img/user.png"  class="card-img" alt="...">
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+               
+              <h5 class="card-title">Диктор: Журавлев М.</h5>
+              <p class="card-text">Голос: бас</p>
+             
+              <p class="card-text">Цена: <span>300 р </span></p>
+              <audio controls>
+                <source src="audio/Igoods1.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+
+        <button class="order" data-toggle="modal" data-target="#exampleModal2">выбрать</button>
+
+        </div>
+                
+                </div>
+
+                
+              
+
+                <h4 id="women"  class="women">Женские голоса</h4>
+                    
+
+
+                <div class="row row__cards">
+                  <div class="col-md-6">
+                    <div class="card card__women">
+                    <div class="row no-gutters">
+                  <div class="col-4">
+                    <img src="img/user2.jpg" class="card-img" alt="...">
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                       
+                      <h5 class="card-title">Диктор: Андрей</h5>
+                      <p class="card-text">Голос: баритон</p>
+                     
+                      <p class="card-text">Цена: <span>300 р </span></p>
+                      <audio controls>
+                        <source src="audio/Igoods1.mp3" type="audio/mpeg">
+                      </audio>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <button class="order" data-toggle="modal" data-target="#exampleModal2">выбрать</button>
+              </div>
+              
+                <div class="col-md-6">
+                  <div class="card card__women">
+                  <div class="row no-gutters">
+                <div class="col-4">
+                  <img src="img/user2.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Диктор: Андрей</h5>
+                      <p class="card-text">Голос: баритон</p>
+                     
+                      <p class="card-text">Цена: <span>300 р </span></p>
+                      <audio controls>
+                        <source src="audio/Igoods1.mp3" type="audio/mpeg">
+                      </audio>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <button class="order" data-toggle="modal" data-target="#exampleModal2">выбрать</button>
+            </div>
+                
+                </div>
+
+                  
+
+
+
+                <div class="row row__cards">
+                  <div class="col-md-6">
+                    <div class="card card__women">
+                    <div class="row no-gutters">
+                  <div class="col-4">
+                    <img src="img/user2.jpg" class="card-img" alt="...">
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                       
+                      <h5 class="card-title">Диктор: Андрей</h5>
+                      <p class="card-text">Голос: баритон</p>
+                     
+                      <p class="card-text">Цена: <span>300 р </span></p>
+                      <audio controls>
+                        <source src="audio/Igoods1.mp3" type="audio/mpeg">
+                      </audio>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <button class="order" data-toggle="modal" data-target="#exampleModal2">выбрать</button>
+              </div>
+              
+                <div class="col-md-6">
+                  <div class="card card__women">
+                  <div class="row no-gutters">
+                <div class="col-4">
+                  <img src="img/user2.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Диктор: Андрей</h5>
+                      <p class="card-text">Голос: баритон</p>
+                     
+                      <p class="card-text">Цена: <span>300 р </span></p>
+                      <audio controls>
+                        <source src="audio/Igoods1.mp3" type="audio/mpeg">
+                      </audio>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <button class="order" data-toggle="modal" data-target="#exampleModal2">выбрать</button>
+            </div>
+                
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+ <!--  FOOTER -->
+            <div class="container_fluid container_fluid__footer">
+              <div class="container container__fixed">
+                <h2 id="contacs">Контакты</h2>
+
+                <nav class="navbar">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="#">
+                  </a>
+                  <ul>
+                    <li class="nav-item ">
+                      <a class="nav-link nav-link_nav nav-link_nav_end phone" href="tel:89261748569"><img src="img/phone2.png" alt=""><span>8-926-174-85-69</span></a>
+                    
+                    </li>
+                    <li>
+                      <a class="nav-link nav-link_nav nav-link_nav_last" href="mailto:raen_86@mail.ru"><img class="pr-1" src="img/email-(2).png" alt=""><span>raen_86@mail.ru</span></a>
+                    </li>
+        
+            
+                    </ul>
+              </nav>
+            </div>
+          </div>
+
+
+          <a id="button"></a>
+
+     
+      
+         
+
+
+          
+
+              
+              
+              
+           
+          
+           
+           
+    
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+ <script src="js/script.js"></script>   
+</body>
+</html>

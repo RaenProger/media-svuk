@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--HEADER-->
+ <div class="container-fluid container-fluid__header">
+   
+    <div class="container container__fixed">
+        <nav class="navbar">
+            <a class="navbar-brand navbar-brand__header" href="index.html">
+              <img src="img/logo.png" alt="#">
+            </a>
+            <ul>
+              <li class="nav-item dropdown">
+                <a class="nav__link" href="index.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Аудиоуслуги
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="audio_advertising.html">реклама</a>
+                  <a class="dropdown-item" href="videocontent.html">видео</a>
+                  <a class="dropdown-item" href="books.html">книги</a>
+                  <a class="dropdown-item" href="autoresponders.html">автоответчики</a>
+                </div>
+              </li>
+              <li>
+                <a class="nav__link" href="speakers.html">Дикторы</a>
+              </li>
+              <li>
+                <a class="nav__link" href="contacts.html">Контакты</a>
+              </li>
+
+      
+              </ul>
+        </nav>
+        
+       
+            
+          
+          
+    </div>
+</div>
+
+
+
+<!-- CHRONOMETER  -->   
+
+<div class="container-fluid container-fluid__chronometer">
+    <div class="container container__fixed">
+     
+      <h1 class="chronometer">Хрономер для текста</h1>
+    
+      <form action="#" id="form">
+        <textarea rows="10" class="form-control" cols="100" name="text" id="text" placeholder="Вставьте ваш текст" style="resize: none"></textarea>
+        
+        <div class="row">
+           
+  
+        
+      <div class="col-md-3">
+      
+      
+        <p>Темп речи</p>
+        <div class="tempo">
+        
+         <div class="radio">
+            <label class="red"><input class="radio" type="radio" value="1" name="temp" >&nbsp;<span>Средний</span></label>
+          </div>
+
+        <div class="radio">
+          <label class="yellow"><input class="radio" type="radio" value="2" name="temp" checked="checked">&nbsp;<span>Медленный</span></label>
+        </div>
+        
+  
+        <div class="radio">
+          <label class="blue"><input class="radio" type="radio" value="3" name="temp">&nbsp;<span>Быстрый</span></label>
+        </div>
+      </div>
+      </div>
+        
+  
+        <div class="col-md-8">
+          <div class="counter">
+        <div><p>Хронометраж текста: <span id="time">0 сек.</span></p></div>
+        <p>Знаков: <span id="cnt">0</span> / Слов: <span id="wrd">0</span></p>
+      </div>
+      </div>
+
+  </div>
+  
+    
+    </form>
+    
+    <button id="reset" name="reset">Сбросить</button>
+  
+  </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  FOOTER -->
+<div class="container_fluid container_fluid__footer">
+    <div class="container container__fixed">
+      <h2 class="contacs">Контакты</h2>
+
+      <nav class="navbar">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="#">
+        </a>
+        <ul>
+          <li class="nav-item ">
+            <a class="nav-link nav-link_nav nav-link_nav_end phone" href="tel:89261748569"><img src="img/phone2.png" alt=""><span>8-926-174-85-69</span></a>
+          
+          </li>
+          <li>
+            <a class="nav-link nav-link_nav nav-link_nav_last" href="mailto:raen_86@mail.ru"><img class="pr-1" src="img/email-(2).png" alt=""><span>raen_86@mail.ru</span></a>
+          </li>
+
+  
+          </ul>
+    </nav>
+  </div>
+</div>
+
+
+
+
+
+
+
+          
+
+              
+              
+              
+           
+          
+           
+           
+    
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+ <script src="js/script.js"></script>   
+</body>
+</html>

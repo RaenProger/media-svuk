@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--HEADER-->
+ <div class="container-fluid container-fluid__header">
+   
+    <div class="container container__fixed">
+        <nav class="navbar">
+            <a class="navbar-brand navbar-brand__header" href="index.html">
+              <img src="img/logo.png" alt="#">
+            </a>
+            <ul>
+              <li class="nav-item dropdown">
+                <a class="nav__link" href="index.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Аудиоуслуги
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="audio_advertising.html">реклама</a>
+                  <a class="dropdown-item" href="videocontent.html">видео</a>
+                  <a class="dropdown-item" href="books.html">книги</a>
+                  <a class="dropdown-item" href="autoresponders.html">автоответчики</a>
+                </div>
+              </li>
+              <li>
+                <a class="nav__link" href="speakers.html">Дикторы</a>
+              </li>
+              <li>
+                <a class="nav__link" href="contacts.html">Контакты</a>
+              </li>
+
+      
+              </ul>
+        </nav>
+        
+        
+        <span class="nav__link__timer"data-toggle="modal" data-target="#exampleModal0" href="">
+          <img src="img/timer.png"
+          alt="Хрономер"><p>Хрономер</p></span>
+       
+          <div class="modal fade" id="exampleModal0" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="close__button">
+                  <span class="close-image-icon">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><img src="img/close.png"></span>
+                  </button>
+                  </span>
+                </div>
+            
+                <div class="container-fluid container-fluid__chronometer">
+                  <div class="container container__fixed">
+                   
+                    <h1 class="chronometer">Хрономер для текста</h1>
+                  
+                    <form action="#" id="form">
+                      <textarea rows="10" class="form-control" cols="100" name="text" id="text" placeholder="Вставьте ваш текст" style="resize: none"></textarea>
+                      
+                      <div class="row">
+                         
+                
+                      
+                    <div class="col-md-3">
+                    
+                    
+                      <p>Темп речи</p>
+                      <div class="tempo">
+                      
+                       <div class="radio">
+                          <label class="red"><input class="radio" type="radio" value="1" name="temp" >&nbsp;<span>Средний</span></label>
+                        </div>
+              
+                      <div class="radio">
+                        <label class="yellow"><input class="radio" type="radio" value="2" name="temp" checked="checked">&nbsp;<span>Медленный</span></label>
+                      </div>
+                      
+                
+                      <div class="radio">
+                        <label class="blue"><input class="radio" type="radio" value="3" name="temp">&nbsp;<span>Быстрый</span></label>
+                      </div>
+                    </div>
+                    </div>
+                      
+                
+                      <div class="col-md-8">
+                        <div class="counter">
+                      <div><p>Хронометраж ≈ <span id="time">0 секунд</span></p></div>
+                      <p>Знаков: <span id="cnt">0</span> / Слов: <span id="wrd">0</span></p>
+                    </div>
+                    </div>
+              
+                </div>
+                
+                  
+                  </form>
+                  
+                  </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+            
+          
+    
+    </div>
+</div>
+
+
+
+
+<!-- CONTACTS -->
+<div class="container_fluid container_fluid__contacts">
+  <div class="container container__fixed">
+    <h2>Контакты</h2>
+    <div class="row">
+      <div class="col-md-5">
+        <img class="raen" src="img/raen.png" alt="">
+        <ul>
+
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:raen_86@mail.ru"><img  src="img/email.png" alt=""><span>raen_86@mail.ru</span></a>
+          </li>
+             
+          <li class="nav-item ">
+            <a class="nav-link" href="https://vk.com/raen_flex" class="phone"><img src="img/vk.png" alt=""><span>vk.com/raen_flex</span></a>
+          </li>
+               
+
+          <li class="nav-item ">
+            <a class="nav-link" href="tel:89261748569" class="phone"><img src="img/phone.png" alt=""><span>8-926-174-85-69 <p>(telegram, whatsapp)</p></span></a>
+          </li>
+
+        </ul>
+
+        
+      </div>
+      <div class="col-md-7">
+        <div class="container  container_form">
+          <h2>Обратная связь</h2>
+        <form>
+    <div class="form-group">
+      <label class="" for="exampleFormControlInput1">Ваше имя<span>*</span></label>
+      <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+    </div>
+    <div class="form-group">
+      <label class="" for="exampleFormControlInput1">Телефон<span>*</span></label>
+      <input type="phone" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+    </div>
+    <div class="form-group">
+     <label for="email" class="">Email<span>*</span></label>
+                  <input type="email" class="form-control form-control-lg" id="email" placeholder="" required>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Сообщение<span>*</span></label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="form-group form-group__btn">
+      <input type="submit" class="btn" value="Отправить" />
+   </div>
+  </form>
+  </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--  FOOTER -->
+            <div class="container_fluid container_fluid__footer">
+              <div class="container container__fixed">
+                
+            </div>
+          </div>
+
+
+          <a id="button"></a>
+
+
+
+
+
+
+
+          
+
+              
+              
+              
+           
+          
+           
+           
+    
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+ <script src="js/script.js"></script>   
+</body>
+</html>
